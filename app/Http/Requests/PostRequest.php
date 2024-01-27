@@ -26,7 +26,8 @@ class PostRequest extends FormRequest
             'weight' => 'integer|min:5',
             'type' => 'required|string',
             'description' => 'string',
-            'points' => 'integer'
+            'points' => 'integer',
+            'status' => 'string'
         ];
     }
 }

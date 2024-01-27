@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('weight')->default(0);
             $table->string('type')->default('-');
             $table->string('description')->default('-');
+            $table->string('status')->default('Dalam Perjalanan');
             $table->integer('points')->default(0);
             $table->timestamps();
 

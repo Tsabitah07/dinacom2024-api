@@ -16,7 +16,8 @@ class Pickup extends Model
         'weight',
         'type',
         'description',
-        'points'
+        'points',
+        'status'
     ];
 
     public function user(): BelongsTo

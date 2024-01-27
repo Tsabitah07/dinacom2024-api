@@ -28,7 +28,8 @@ class PickupController extends Controller
             'weight' => $request->weight,
             'type'=> $request->type,
             'description' => $request->description,
-            'points' => $request->points=0
+            'points' => $request->points=0,
+            'status' => $request->status='Dalam Perjalanan'
         ]);
 
         $user = User::find(auth()->user()->id);
@@ -50,7 +51,8 @@ class PickupController extends Controller
             'weight' => $request->weight,
             'type'=> $request->type,
             'description' => $request->description,
-            'points' => $request->points
+            'points' => $request->points,
+            'status' => $request->status
         ]);
 
         $user = User::find(auth()->user()->id);
