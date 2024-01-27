@@ -23,7 +23,7 @@ class PostRequest extends FormRequest
     {
         return [
             'detail_location' => 'required|string',
-            'weight' => 'integer|min:500',
+            'weight' => 'integer|min:5',
             'type' => 'required|string',
             'description' => 'string',
             'points' => 'integer'
